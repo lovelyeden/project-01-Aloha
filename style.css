@@ -1,19 +1,24 @@
-*{
+{
     box-sizing: border;
     border: 2px dashed #ccc;
 }
 
 /* This is global */
-body, html { 
+body { 
     font-size: 16px;
     font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    color: #2d2d2d;
 }
 ul {
     list-style-type: none;
 }
 h1,h2,h3{
     font-family: 'Playfair Display';
-    font-weight: 500;
+}
+a:hover{
+    color: #b64036;
 }
 
 /* This is my header section */
@@ -37,9 +42,10 @@ h1,h2,h3{
     margin: 0 auto;
     padding: 0;
 }
-a {
+.nav a {
     text-decoration: none;
     color:#e2574c;
+
 }
 .site-logo img{
     width: 150px;
@@ -53,10 +59,10 @@ a {
 /* This is my banner section */
 .banner {
     position: relative;
-    height: 500px;
+    height: 400px;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-    background-repeat: repeat, no-repeat, repeat;
+    background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: contain, contain, contain;
     background-position:center, center 70px, center; 
 }
@@ -86,12 +92,7 @@ a {
     font-size: 1.2rem;
     color: #2d2d2d;
 }
-br            {
-    display: block;
-    margin: 20px;
-    line-height: 20px;
-    
-}
+
 .products     {
     text-align: center;
     align-items: center;
@@ -107,45 +108,72 @@ br            {
     margin: 0 auto;
     width: 1240px;
     height: 400px;
-}
-.sign-text {
-  
-
+    color: white;
 
 }
 .mens {
     width: 2px;
 }
 /* This is my image list */
-.items {
-    display: flex;
-    flex-direction: row;
-    box-flex: wrap;
-    align-items: flex-end;
-}
+
+
 .featured-items {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: left;
   flex-direction: row;
 }
+
+.item-1{
+    background-image: url(images/mens-category.jpg);
+    margin: 
+    order:0;
+   align-items: center;
+}
+
+input[type="email"]{
+color: white;
+}
+input[type="submit"]{
+    color: white;
+    background: #e2574c;
+    border-radius: 10px;
+}
+
+
+
+
 
 
 
 /* This is my Footer*/
 .container-footer {
     display: flex;
-    font-display: 'Playfair Display';
-    font-style: normal;
     background-color:#242424;
+    height: 300px;
     color: white;
     justify-content: space-around;
     margin: 0 auto;
+
+}
+.container-footer address {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 300;
+    align-items: center;
+}
+.email {
+    color: white;
+}
+.social {
+    color: white;
+    text-decoration: none;
+    line-height: 250%;
+    align-items: center;
 }
 /* Media Query for mobile phones: */ 
-@media screen and(min-width: 600px){
-.site-nav {
-    width: 100%;
+/*@media screen and(min-width: 600px){
 }
 .site-logo img {
     width: 50%;
@@ -153,8 +181,12 @@ br            {
 .site-cart img {
     width: 50%
 }
-
-/*
-header{
-    align items
+.site-nav{
+    width: 100%;
+}
+*/
+@media screen and (max-width: 600px) {
+  body {
+    color: red;
+  }
 }
