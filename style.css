@@ -1,15 +1,16 @@
-{
-    box-sizing: border;
-    border: 2px dashed #ccc;
+* {
+    box-sizing: border-box;
+    /* border: 2px dashed #ccc; */
 }
 
 /* This is global */
 body { 
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
     color: #2d2d2d;
+    max-width: 100%
 }
 ul {
     list-style-type: none;
@@ -20,9 +21,49 @@ h1,h2,h3{
 a:hover{
     color: #b64036;
 }
+img {
+    max-width: 100%;
+}
+/* This is my header */
+
+.site-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px; */
+    /* align-content: center; */
+}
+.site-logo {
+    order: 1;
+    max-width: 100px;
+    width: 50%;
+}
+.site-nav {
+    width: 100%;
+    order: 3;
+    justify-content: center;
+}
+.site-cart {
+    width: 50%;
+    max-width: 150px;
+    order: 2;
+    align-items: left;
+}
+.site-nav .nav {
+    display: flex;
+    padding: 0;
+}
+
+
+
+
+
 
 /* This is my header section */
-.site-header {
+/*.site-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,7 +81,7 @@ a:hover{
 }
 .nav {
     margin: 0 auto;
-    padding: 0;
+    padding: ;
 }
 .nav a {
     text-decoration: none;
@@ -62,9 +103,10 @@ a:hover{
     height: 400px;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat, repeat;
     background-size: contain, contain, contain;
-    background-position:center, center 70px, center; 
+    background-position:contain, ccontain 70px, cover; 
+    width: 100%;
 }
 .banner-text {
     position: absolute;
@@ -92,7 +134,6 @@ a:hover{
     font-size: 1.2rem;
     color: #2d2d2d;
 }
-
 .products     {
     text-align: center;
     align-items: center;
@@ -100,37 +141,121 @@ a:hover{
     color: #2d2d2d;
 }
 .site-updates {
-    background-position:center;
+    background-position:bottom;
     background-image: url(images/wave-bkgd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     margin: 0 auto;
-    width: 1240px;
     height: 400px;
     color: white;
 
 }
-.mens {
-    width: 2px;
-}
-/* This is my image list */
 
+/* This is my featured items */
 
 .featured-items {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: left;
-  flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.items-1{
+    width: 100%;
+    height: 50vw;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-image: url(images/mens-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.items-2{
+    width: 50%;
+    height: 50vw;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-image: url(images/trends-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+   
+}
+.items-3{
+    width: 50%;
+    height: 50vw;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-image: url(images/glasses-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+}
+.items-4{
+    width: 50%;
+    border: 1px solid white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-image: url(images/sale-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+}
+.items-5 {
+    width:50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    background-image: url(images/bags-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+   
+}
+.items-6 {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    background-image: url(images/womens-category.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 400px; */
+
+}
+p.item {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+.form{
+position: relative;
 }
 
-.item-1{
-    background-image: url(images/mens-category.jpg);
-    margin: 
-    order:0;
-   align-items: center;
-}
 
 input[type="email"]{
 color: white;
@@ -145,8 +270,6 @@ input[type="submit"]{
 
 
 
-
-
 /* This is my Footer*/
 .container-footer {
     display: flex;
@@ -155,7 +278,6 @@ input[type="submit"]{
     color: white;
     justify-content: space-around;
     margin: 0 auto;
-
 }
 .container-footer address {
     font-family: 'Playfair Display';
@@ -166,27 +288,34 @@ input[type="submit"]{
 .email {
     color: white;
 }
-.social {
+.site-social {
     color: white;
     text-decoration: none;
     line-height: 250%;
     align-items: center;
 }
+i {
+    margin: 10px;
+}
+
 /* Media Query for mobile phones: */ 
-/*@media screen and(min-width: 600px){
+@media screen and (min-width: 600px){
+    .site-logo {
+        order: 1;
+        width: 15%;
+    }
+    .site-cart{
+        order: 3;
+        width: 15%;
+    }
+    .site-nav{
+        order: 2;
+        width: 70%;
+    }
 }
-.site-logo img {
-    width: 50%;
-}
-.site-cart img {
-    width: 50%
-}
-.site-nav{
-    width: 100%;
-}
-*/
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1240px) {
   body {
     color: red;
-  }
+    }
 }
