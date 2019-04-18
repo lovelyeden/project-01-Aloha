@@ -1,19 +1,15 @@
 * {
     box-sizing: border-box;
-    /* border: 2px dashed #ccc; */
+    /*border: 1px solid red;*/
 }
-
 /* This is global */
 body { 
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
     color: #2d2d2d;
     max-width: 100%
-}
-ul {
-    list-style-type: none;
 }
 h1,h2,h3{
     font-family: 'Playfair Display';
@@ -24,89 +20,58 @@ a:hover{
 img {
     max-width: 100%;
 }
-/* This is my header */
+ul{
+    list-style: none;
+}
 
+/* This is for mobile screen */
+/* This is my header */
 .site-header {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* height: 200px; */
-    /* align-content: center; */
+    padding: 5%;
 }
 .site-logo {
     order: 1;
-    max-width: 100px;
     width: 50%;
+    max-width: 35%;
+}
+.site-cart {
+    order: 2;
+    width: 50%;
+    max-width: 15%;
+    text-align: right;
 }
 .site-nav {
     width: 100%;
     order: 3;
-    justify-content: center;
-}
-.site-cart {
-    width: 50%;
-    max-width: 150px;
-    order: 2;
-    align-items: left;
+
 }
 .site-nav .nav {
     display: flex;
+    list-style-type: none;
     padding: 0;
+    justify-content: center;
 }
-
-
-
-
-
-
-/* This is my header section */
-/*.site-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 8px;
-    margin-left: 40px;
-    margin-right:40px;
-    margin-bottom: 8px;
-}          
-.site-nav li{
-    text-align: center;
-    display: inline-block;
-    padding: 30px;
-    text-transform: uppercase;
-}
-.nav {
-    margin: 0 auto;
-    padding: ;
-}
-.nav a {
+.site-nav a{
     text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px;
     color:#e2574c;
-
 }
-.site-logo img{
-    width: 150px;
-}
-.site-cart img{
-    width: 50px;
-}
-
-
-
 /* This is my banner section */
 .banner {
     position: relative;
-    height: 400px;
+    height: 420px;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner-girl.png), url(images/flower-bkgd.jpg);
-    background-repeat: no-repeat, no-repeat, repeat;
-    background-size: contain, contain, contain;
-    background-position:contain, ccontain 70px, cover; 
-    width: 100%;
+    background-repeat:repeat, no-repeat, no-repeat;
+    background-size: contain, contain, cover;
+    background-position:center,center 45px,center;
 }
 .banner-text {
     position: absolute;
@@ -117,42 +82,33 @@ img {
 }
 .new {
     text-transform: uppercase;
-    font-size: 1rem;
-    text-shadow: 1px 1px gray;
-}
-.spring {
-    font-family: 'Playfair Display' serif;
-    font-size: 3rem;
+    font-size: 18px;
     font-weight: 500;
     text-shadow: 1px 1px gray;
 }
-/* This is my Third Section */
+.spring {
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+/* This is my second-section */
 
 .hand-crafted {
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #2d2d2d;
+    padding:30px;
 }
 .products     {
     text-align: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 16px;
     color: #2d2d2d;
 }
-.site-updates {
-    background-position:bottom;
-    background-image: url(images/wave-bkgd.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    margin: 0 auto;
-    height: 400px;
-    color: white;
 
-}
-
-/* This is my featured items */
+/* This is my third section */
 
 .featured-items {
     display: flex;
@@ -160,162 +116,203 @@ img {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
 .items-1{
     width: 100%;
     height: 50vw;
-    border: 1px solid white;
+    border: 4px solid white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center ;
-    background-image: url(images/mens-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.188),rgba(0,0,0,0.188 )), url(images/mens-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
 }
 .items-2{
     width: 50%;
     height: 50vw;
-    border: 1px solid white;
+    border: 4px solid white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center ;
-    background-image: url(images/trends-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/trends-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 400px; */
-   
 }
 .items-3{
     width: 50%;
     height: 50vw;
-    border: 1px solid white;
+    border: 4px solid white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center ;
-    background-image: url(images/glasses-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/glasses-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 400px; */
 }
 .items-4{
     width: 50%;
-    border: 1px solid white;
+    height: 50vw;
+    border: 4px solid white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center ;
-    background-image: url(images/sale-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/sale-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 400px; */
+
 }
 .items-5 {
     width:50%;
-    border: 1px solid white;
+    height: 50vw;
+    border: 4px solid white;
     display: flex;
     align-items: center;
     justify-content: center ;
     text-align: center;
-    background-image: url(images/bags-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/bags-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 400px; */
-   
 }
 .items-6 {
     width: 100%;
-    border: 1px solid white;
+    height: 50vw;
+    border: 4px solid white;
     display: flex;
     align-items: center;
     justify-content: center ;
     text-align: center;
-    background-image: url(images/womens-category.jpg);
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/womens-category.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 400px; */
+}
+.site-price li
+{
+    list-style: none;
+    text-align: center;
 
+}
+
+/* This is my fourth section */
+.site-updates {
+    background-position:bottom;
+    background:linear-gradient(rgba(0,0,0,0.18),rgba(0,0,0,0.18)), url(images/wave-bkgd.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    text-align: center;
+    height: 300px;
+    color: white;
 }
 p.item {
     color: white;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
 }
-.form{
-position: relative;
+.site-updates{
+    position: relative;
 }
-
-
+.site-form{
+    display: inline-block;
+    background: white;
+    width: 80%;
+}
 input[type="email"]{
-color: white;
+position: absolute;
+top: 80%;
+left: 50%;
+background-color: white;
+transform: translate(-50%,-50%);
 }
 input[type="submit"]{
     color: white;
     background: #e2574c;
     border-radius: 10px;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%,-50%);
 }
-
-
-
-
+.sign-text {
+    top: 20%;
+    position: absolute;
+}
 
 /* This is my Footer*/
 .container-footer {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color:#242424;
-    height: 300px;
     color: white;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: center;
     margin: 0 auto;
 }
 .container-footer address {
     font-family: 'Playfair Display';
     font-style: normal;
-    font-size: 300;
-    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
 }
 .email {
     color: white;
 }
-.site-social {
+
+
+/* .site-social {
     color: white;
-    text-decoration: none;
     line-height: 250%;
     align-items: center;
+    width: 100%;
+    
 }
-i {
+a.social li {
     margin: 10px;
+    text-decoration:none;
 }
 
-/* Media Query for mobile phones: */ 
-@media screen and (min-width: 600px){
-    .site-logo {
+.site-social span {
+    display: none; 
+} */
+    
+
+
+/* Media Query for tablet: */ 
+@media screen and (min-width: 600px) {
+    .site-price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    /* Header */
+   .site-logo {
         order: 1;
         width: 15%;
     }
-    .site-cart{
+    .site-cart {
         order: 3;
         width: 15%;
     }
-    .site-nav{
+    .site-nav {
         order: 2;
         width: 70%;
     }
-}
-
-@media screen and (max-width: 1240px) {
-  body {
-    color: red;
+    /* Featured-items */
+    .items-1 .item-6{
+        width: 50%;
     }
-}
+    .items-2 .items-3 .items-4 .item-5{
+        width: 25%;
+}}
