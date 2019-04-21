@@ -1,43 +1,33 @@
 /* Global Section */
-
 * {
     box-sizing: border-box;
-    /* border: 1px orangered solid;*/
 }
-
 img {
     max-width: 100%;
 }
-
 html {
     scroll-behavior: smooth;
     max-width: 100%;
 }
-
 body {
     font-size: 16px;
     font-family: 'Raleway';
 }
-
 ul, li {
     margin: 0;
     padding: 0;
 }
-
 span:hover, i:hover a:hover {
     color: #b64036;
 }
-
 h1, h2, h3 {
     font-family: 'Playfair';
 }
-
 strong {
     font-style: bold;
 }
 
 /* Header Section*/
-
 .site-container {
     display: flex;
     flex-direction: row;
@@ -48,43 +38,37 @@ strong {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .site-header {
     margin: 0;
     padding: 0.3em;
 }
-
 .site-logo {
     order: 1;
     max-width: 36%;
     width: 50%;
     text-align: center;
 }
-
 .site-cart {
     order: 2;
     max-width: 10%;
     width: 50%;
 }
-
 .site-nav {
     order: 3;
     width: 100%;
     text-align: center;
 }
-
 .site-nav a {
     color: #e2574C;
     display: inline-flex;
 }
-
 .site-nav li {
     text-align: center;
     margin: 0;
     text-transform: uppercase;
     display: inline-block;
+    font-size: 0.875em;
 }
-
 .site-nav ul {
     display: flex;
     list-style-type: none;
@@ -93,14 +77,12 @@ strong {
     text-align: center;
     padding: 0;
 }
-
 .site-nav a {
     text-decoration: none;
     margin: 1.0em;
 }
 
-/* Banner-Section */
-
+/* Hero Banner-Section */
 .site-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner-girl.png), url(images/flower-bkgd.jpg);
     height: 90vW;
@@ -113,13 +95,11 @@ strong {
     justify-content: center;
     align-content: center;
 }
-
 .banner-text {
     margin: auto;
     width: 80%;
     max-width: 100%;
 }
-
 .banner-text p {
     text-transform: uppercase;
     color: white;
@@ -127,21 +107,18 @@ strong {
     font-style: light;
     font-size: 0.875em;
 }
-
 .banner-text h1 {
     color: white;
     font-family: 'Playfair Display';
     font-size: 2.5em;
     font-weight: 300;
 }
-
 .hand-crafted {
     text-align: center;
     margin-bottom: 1em;
     padding: 2%;
     color: #2d2d2d;
 }
-
 .aloha {
     font-size: 0.875em;
     font-style: normal;
@@ -151,19 +128,17 @@ strong {
     text-align: center;
     line-height: 2em;
 }
-
 .hand-crafted h2 {
     font-size: 1.5em;
     font-weight: 200;
     font-family: 'Playfair Display';
     font-style: italic;
 }
-
 .hand-crafted strong {
     font-weight: 600;
     font-style: normal;
 }
-
+/* Tile Section */
 .featured-items {
     display: flex;
     text-align: center;
@@ -172,7 +147,6 @@ strong {
     flex-wrap: wrap;
     width: 100%;
 }
-
 .item-1 {
     width: 100%;
     height: 50vw;
@@ -186,7 +160,6 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item-2 {
     width: 50%;
     height: 50vw;
@@ -200,7 +173,6 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item-3 {
     width: 50%;
     height: 50vw;
@@ -214,7 +186,6 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item-4 {
     width: 50%;
     height: 50vw;
@@ -228,7 +199,6 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item-5 {
     width: 50%;
     height: 50vw;
@@ -242,7 +212,6 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item-6 {
     width: 100%;
     height: 50vw;
@@ -256,60 +225,51 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .item {
     text-transform: uppercase;
     color: white;
     font-size: 1.2em;
     text-decoration: none;
 }
-
-/* 4th Section-MostLoved*/
-
+/* MostLoved Section Heading and Carousel */
 .products h2 {
     font-size: 1.5em;
     font-weight: 200;
     font-family: 'Playfair Display';
     font-style: italic;
 }
-
 .products strong {
     font-weight: 600;
     font-style: normal;
 }
-
 .products {
     text-align: center;
     color: #2d2d2d;
 }
-
 .main-carousel {
     margin: 3.5em;
 }
-
 .carousel-cell {
     width: 100%;
     margin-right: 10px;
     text-align: center;
 }
-
 .carousel-cell p {
     text-transform: uppercase;
     font-family: 'Raleway';
     color: #969696;
     font-size: 0.875em;
 }
-
 .carousel-cell h3 {
     font-family: 'Playfair Display';
     color: #e2574c;
     font-weight: 20;
 }
-
+/* Sign-Updates Section and Form */
 .sign-updates {
     background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(images/wave-bkgd.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: cover 50%;
+    background-size: cover 40%;
     background-position: bottom;
     text-align: center;
     color: white;
@@ -319,20 +279,16 @@ strong {
     justify-content: center;
     height: 70vw;
 }
-
 .sign-updates h2 {
-    text-align: center;
     font-family: 'Playfair Display';
     font-size: 1.5em;
     font-style: italic;
     font-weight: 300;
 }
-
 .sign-updates strong {
     font-style: normal;
     font-weight: 600;
 }
-
 .sign-updates p {
     text-align: center;
     font-family: 'Raleway';
@@ -340,31 +296,23 @@ strong {
     font-weight: 300;
     line-height: 1.8em;
 }
-
-.updates-text {
-    text-align: center;
-    margin: 0;
-}
-
 .site-form {
     position: relative;
     text-align: center;
 }
-
 input[type="email"] {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
+    left:50%; */
     border-style: solid;
     border-color: white;
     background-color: white;
-    width: 35em;
+    width:30em;
     height: 3.2em;
     transform: translate(-50%, -50%);
     border-radius: 20px;
     font-size: 10px;
-    margin: 0%;
 }
-
 input[type="submit"] {
     position: absolute;
     color: white;
@@ -372,22 +320,19 @@ input[type="submit"] {
     transform: translate(-50%, -50%);
     border-radius: 20px;
     height: 2.5em;
-    width: 120px;
+    width: 10em;
     position: absolute;
-    top: 40%;
-    left: 75%;
+    top: 50%;
+    left: 70%;
     font-size: 11px;
     text-align: center;
     margin: 0%;
 }
-
 .site-form {
     margin-top: 4em;
     display: relative;
 }
-
-/*Footer Section*/
-
+/* Footer Section */
 .container-footer {
     font-family: 'Playfair Display';
     height: 60vw;
@@ -398,175 +343,165 @@ input[type="submit"] {
     color: white;
     display: flex;
     flex-wrap: wrap;
+    margin-top:0.5em;
     flex-direction: row;
     justify-content: center;
 }
-
 .site-social {
     width: 50%;
     margin: 0;
 }
-
 div.address-text {
     text-align: center;
     font-style: normal;
     font-size: 0.875em;
     width: 100%;
 }
-
 .address-text p {
     margin: auto;
 }
-
 .west {
     color: #969696;
 }
-
 .site-social span {
     visibility: hidden;
 }
-
 .email {
     color: white;
 }
-
 .site-social li {
     display: inline-block;
     margin: 0;
     padding: 10px;
     width: 10%;
 }
-
 .site-social a {
     color: white;
     font-size: 100%;
     width: 4%;
 }
-
 .social-ul {
     margin: 0;
 }
-
 .address-text p {
     margin: 5%;
 }
 
-/* Media Query for tablet: */
+
+/* Media Query for tablet:600px screen sizes */
 
 @media screen and (min-width: 600px) {
-    .site-logo {
-        order: 1;
-        width: 15%;
+/* HeaderSection  */
+   .site-logo {
+    order: 1;
+    width: 15%;
+}
+.site-cart {
+    order: 3;
+    width: 15%;
     }
-    .site-cart {
-        order: 3;
-        width: 15%;
+.site-nav {
+    order: 2;
+    width: 70%;
     }
-    .site-nav {
-        order: 2;
-        width: 70%;
-    }
-    .item-1 {
-        width: 50%;
-        height: 30vw;
-    }
-    .item-2 {
-        width: 25%;
-        height: 30vw;
-    }
-    .item-3 {
-        width: 25%;
-        height: 30vw;
-    }
-    .item-4 {
-        width: 25%;
-        height: 30vw;
-    }
-    .item-5 {
-        width: 25%;
-        height: 30vw;
-    }
-    .item-6 {
-        width: 50%;
-        height: 30vw;
-    }
-    /* Main-Carousel */
-    .carousel-cell {
-        width: 50%;
-        margin-right: 10px;
-        text-align: center;
-    }
-    .sign-updates {
-        height: 50%;
-        margin: 0;
-    }
-    .site-form {
-        margin-bottom: 50px;
-    }
-    input[type="email"] {
-        top: 50%;
-        left: 50;
-        width: 50px;
-        height: 100px;
-        transform: translate(-50%, -50%);
-        border-radius: 20px;
-        font-size: 10px;
-    }
-    input[type="submit"] {
-        position: absolute;
-        color: white;
-        background: #e2574c;
-        transform: translate(-50%, -50%);
-        top: 40%;
-        left: 100%;
-        width: 10px;
-        font-size: 11px;
-        text-align: center;
-        margin: 0%;
-    }
-    .site-social span {
-        visibility: visible;
-    }
-    .container-footer {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        align-content: center;
-        flex-wrap: wrap;
-        height: 50vw;
-        width: 100%;
-    }
-    div.address-text {
-        width: 50%;
-        text-align: left;
-        font-size: 16px;
-    }
-    .address-text p {
-        margin: 10%;
-    }
-    .site-social {
-        width: 30%;
-        margin-left: 0;
-        text-align: left;
-        font-family: 'Raleway';
-    }
-    .site-social li {
-        display: inline;
-        line-height: 30px;
-        text-align: left;
-    }
-    .site-social i {
-        display: inline;
-        text-align: left;
-        border: 0;
-    }
-    .social-ul a {
-        text-decoration: none;
-        margin: 5%;
-    }
-    .site-social ul {
-        margin: 10%;
-    }
+/* Tile Section */
+.item-1 {
+    width: 50%;
+    height: 30vw;
+}
+.item-2 {
+    width: 25%;
+    height: 30vw;
+}
+.item-3 {
+    width: 25%;
+    height: 30vw;
+}
+.item-4 {
+    width: 25%;
+    height: 30vw;
+}
+.item-5 {
+    width: 25%;
+    height: 30vw;
+}
+.item-6 {
+    width: 50%;
+    height: 30vw;
+}
+/* MostLoved Section and Carousel Section */
+.carousel-cell {
+    width: 50%;
+    margin-right: 10px;
+    text-align: center;
+}
+/* SignUp Ssection */
+.sign-updates {
+    height: 50%;
+    margin: 0;
+}
+.site-form {
+    margin: auto;
+}
+input[type="submit"] {
+    color: white;
+    background: #e2574c;
+    transform: translate(70%, -50%);
+    border-radius: 20px;
+    height: 2.5em;
+    width: 10em;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    font-size: 11px;
+    text-align: center;
+    margin: 0%;
+}
+/* Footer Section */
+.site-social span {
+    visibility: visible;
+}
+.container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 50vw;
+    width: 100%;
+}
+div.address-text {
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+}
+.address-text p {
+    margin: 10%;
+}
+.site-social {
+    width: 30%;
+    margin-left: 0;
+    text-align: left;
+    font-family: 'Raleway';
+}
+.site-social li {
+    display: inline;
+    line-height: 30px;
+    text-align: left;
+}
+.site-social i {
+    display: inline;
+    text-align: left;
+    border: 0;
+}
+.social-ul a {
+    text-decoration: none;
+    margin: 5%;
+}
+.site-social ul {
+    margin: 10%;
+}
+
     /* Media Query for Desktop: */
     @media screen and (min-width: 1240px) {}
     .site-nav {
