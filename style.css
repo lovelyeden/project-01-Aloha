@@ -22,9 +22,7 @@ span:hover, i:hover a:hover {
 }
 h1, h2, h3 {
     font-family: 'Playfair';
-}
-strong {
-    font-style: bold;
+
 }
 
 /* Header Section*/
@@ -104,7 +102,6 @@ strong {
     text-transform: uppercase;
     color: white;
     font-weight: 500;
-    font-style: light;
     font-size: 0.875em;
 }
 .banner-text h1 {
@@ -263,14 +260,14 @@ strong {
 .carousel-cell h3 {
     font-family: 'Playfair Display';
     color: #e2574c;
-    font-weight: 20;
+    font-weight: 200;
 }
 /* Sign-Updates Section and Form */
 .sign-updates {
     background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(images/wave-bkgd.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-size: cover 40%;
-    background-position: bottom;
+    background-size: cover;
+    background-position:bottom;
     text-align: center;
     color: white;
     width: 100%;
@@ -330,7 +327,7 @@ input[type="submit"] {
 }
 .site-form {
     margin-top: 4em;
-    display: relative;
+    position: relative;
 }
 /* Footer Section */
 .container-footer {
