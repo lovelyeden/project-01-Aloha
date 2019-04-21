@@ -1,175 +1,198 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
+
 <head>
-    <title>Aloha Project | Lovely Diane Eden</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aloha Project | Lovely Diane Eden</title>
 
     <link rel="stylesheet" href="reset.css" type="text/css">
     <link rel="stylesheet" href="fonts.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <!--This is my header-->
+
     <header class="site-header">
-        <div class="site-logo">
-        <img src="images/aloha-logo.svg" alt="logo"/>
-        </div>
-
-        <nav class="site-nav">
-                <ul class="nav">
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Shop</a></li>
-                   <li><a href="#">Featured</a></li>
-                   <li><a href="#">Updates</a></li>
-               </ul>
-        </nav>
-
-        <div class="site-cart">
-        <img src="images/cart-icon.svg" alt="cart"/>
-        </div>
-        
-    </header>
-
-    <!--This is my section1-->
-    <section class="banner">
-        <div class="banner-text">
-            <p class="new">New Collection</p>
-            <h1 class="spring">Spring/Summer 2016</h1>
-        </div>
-    </section>
-    
-     <!--This is my section2-->
-    <section class="hand-crafted">
-        <h2> <em>Hand-Crafted</em> <strong>Styles</strong></h2>
-        <p>Aloha Apparrel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or
-            sign-up for updates below.</p>
-    </section>
-    <!--This is my section3-->
-    <section class="featured-items">
-        <div class="items-1">
-            <p class="item">Men's</p>
-        </div>
-
-        <div class="items-2">
-           <p class="item">Trends</p> 
-        </div>
-
-        <div class="items-3">
-         <p class="item">Glasses</p>
-        </div>
-
-        <div class="items-4">
-            <p class="item">Sale</p>
-        </div>
-
-        <div class="items-5">
-            <p class="item">Bags</p>
-        </div>
-
-        <div class="items-6">
-            <p class="item">Womens</p>
-        </div>
-
-    </section>
-    <!--This is my section4-->
-    <section class="products">
-            <h2><em>Most Loved </em> <strong>Products</strong></h2>
-    </section>
-     <!--This is my section5-->
-    <section class="site-price">
-        <ul>
-            <li>
-                <p>Dresses</p>
-                <img src="images/stretch-knit-dress.jpg" />
-                <h3>Stretch Knit Dress</h3>
-                <p>$169</p>
-            </li>
-
-            <li>
-                <p>Shirts</p>
-                <img src="images/cotton-blue-shirt.jpg" />
-                <h3>Cotton Blue Shirts</h3>
-                <p>$89</p>
-            </li>
-
-            <li>
-                <p>Dresses</p>
-                <img src="images/checked-stretch-dress.jpg" />
-                <h3>Checked Stretch Dress</h3>
-                <p>$129</p>
-            </li>
-
-            <li>
-                <p>Bags</p>
-                <img src="images/blue-hipster-backpack.jpg" />
-                <h3>Blue Hipster Backpack</h3>
-                 <p>$69</p>
-            </li>
-
-            <li>
-                <p>Denim<p>
-                <img src="images/demin-overall-shorts.jpg" />
-                <h3>Denim Overall Shorts</h3>
-                <p>$89</p>
-            </li>
-
-    
-        
-             <!--- <li><img src="images/blue-silk-dress.jpg" /></li>--->
-             <!--- <li><img src="images/cotton-yellow-tshirt.jpg" /> </li>--->
-        </ul>
-    </section>
-
-    <!--This is my section6-->
-    <section class="site-updates">
-        <div class="sign-text">
-            <h2><em>Sign-up for</em> <strong>Updates</strong><h2></h2>
-            <p>Stay updated on our latest product releases, be first to find out about upcoming sales and get free style
-                tips from our blog. Unsubscribe anytime.</p>
+        <div class="site-container">
+            <div class="site-logo">
+                <img src="images/aloha-logo.svg" alt="logo" />
             </div>
 
-            <form class="site-form">
-                <input type="email" placeholder="Your Email" />
-                <input type="submit" value="Subscribe">
-            </form>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Updates</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-cart">
+                <img src="images/cart-icon.svg" alt="cart" />
+            </div>
+        </div>
+    </header>
+
+
+    <section class="site-banner">
+        <div class="banner-text">
+            <p>New Collection</p>
+            <h1>Spring/Summer 2016</h1>
+        </div>
     </section>
 
-    <!--This is my footer-->
+
+    <section class="hand-crafted">
+        <div class="container-craft">
+            <h2>Hand-Crafted<strong> Styles</strong></h2>
+        </div>
+        <div class="aloha">
+            <p>Aloha Apparrel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
+                products or
+                sign-up for updates below.</p>
+        </div>
+    </section>
+
+
+    <section class="featured-items">
+        <div class="item-1">
+            <p><a class=item href="#">Men's</a></p>
+        </div>
+
+        <div class="item-2">
+            <p><a class=item href="#">Trends</a></p>
+        </div>
+
+        <div class="item-3">
+            <p><a class=item href="#">Glasses</a></p>
+        </div>
+
+        <div class="item-4">
+            <p><a class=item href="#">Sale</a></p>
+        </div>
+
+        <div class="item-5">
+            <p><a class=item href="#">Bags</a></p>
+        </div>
+
+        <div class="item-6">
+            <p><a class=item href="#">Women's</a></p>
+        </div>
+    </section>
+
+
+    <section class="products">
+        <h2>Most-Loved <strong>Products</strong></h2>
+    </section>
+
+
+    <section class="main-carousel">
+        <div class="carousel-cell">
+            <img src="images/cotton-blue-shirt.jpg" />
+            <p>Shirts</p>
+            <h3>Cotton Blue Shirts</h3>
+            <p>$89</p>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/checked-stretch-dress.jpg" />
+            <p>Dresses</p>
+            <h3>Checked Stretch Dress</h3>
+            <p>$129</p>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/blue-hipster-backpack.jpg" />
+            <p>Bags</p>
+            <h3>Blue Hipster Backpack</h3>
+            <p>$69</p>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/demin-overall-shorts.jpg" />
+            <p>Denim</p>
+            <h3>Denim Overall Shorts</h3>
+            <p>$89</p>
+        </div>
+    </section>
+
+    <section class="sign-updates">
+        <h2>Sign-up for <strong>Updates</strong></h2>
+        <p> Stay updated on our latest product releases, be first to find out about upcoming sales,and get free style
+            tipos from our blog. Unsubscribe at anytime.</p>
+
+
+        <form class="site-form">
+            <input type="email" placeholder="&nbsp;&nbsp;Your Email" />
+            <input type="submit" value="Subscribe" />
+        </form>
+    </section>
+
+
+
     <footer class="container-footer">
 
-        <address>
+        <div class="address-text">
             <p>&copy; 2016 Aloha Apparrel Co.<br>
-            Powered by HTML and CSS.</p>
-            <p>604.604.6040&nbsp;<a class="email" href="#">.info@alohaapparel.com</a></p> 
-            
-            <p>West Broadway<br>
-            Vancouver, BC, Canada</p>
-        </address>
-  
+                Powered by HTML and CSS.</p>
+            <p>604.604.6040&nbsp;<a class="email" href="#">.info@alohaapparel.com</a></p>
 
-    
-          <div class="site-social">
-              <ul>
-                <li> 
-                    <a class="social" href="#"><i class="fab fa-facebook"></i><span>Facebook</span></a></li>
-                <li> 
-                    <a class="social" href="#"><i class="fab fa-twitter-square"></i><span>Twitter</span></a></li>
-                <li> 
-                    <a class="social" href="#"><i class="fab fa-instagram"></i><span>Instagram</span> </a></li>
-                <li> 
-                    <a class="social" href="#"><i class="fab fa-pinterest"></i><span>Pinterest</span> </a></li>
-                <li> 
-                    <a class="social" href="#"><i class="fab fa-google-plus-g"></i><span>Google</span></a></li>
+            <p class="west">1490 W Broadway<br>
+                Vancouver, BC, Canada</p>
+        </div>
+
+
+        <div class="site-social">
+            <ul class="social-ul">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter-square"></i>
+                        <span>Twitter</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                        <span>Pinterest</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                        <span>Google</span>
+                    </a>
+                </li>
             </ul>
         </div>
+
     </footer>
 
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
