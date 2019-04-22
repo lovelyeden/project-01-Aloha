@@ -22,10 +22,12 @@
 - Mark-up language and its function in website.
 - Write a well-structured HTML.
 - Use of HTML elements such as headings, tags, elements and attribbutes.
+- Create a mobile first screen html 
 ### CSS
 - Class selectors 
 - Properties
 - Values
+- Use of media queries for responsive website by creating a mobile first screen.
 ### JAVASCRIPT
 - Use of functions,loops,let,const,loops
 
