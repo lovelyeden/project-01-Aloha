@@ -21,7 +21,7 @@ ul, li {
     padding: 0;
 }
 span:hover, i:hover a:hover {
-    color: #b64036;
+    color: #db3a26;
 }
 h1, h2, h3 {
     font-family: 'Playfair';
@@ -77,11 +77,13 @@ h1, h2, h3 {
     text-align: center;
 }
 .site-nav a {
-    color: #e2574C;
+    color: #db3a26;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
 }
+
+
 .site-nav li {
     text-align: center;
     margin: 0;
@@ -358,12 +360,12 @@ h1, h2, h3 {
 }
 .carousel-cell h3 {
     font-family: 'Playfair Display';
-    color: #e2574c;
+    color: #db3a26;
     font-weight: 200;
 }
 .most{
     text-decoration:none;
-    color: #e2574c;
+    color: #db3a26;
     font-size:0.875em;
 }
 /* Sign-Updates Section and Form */
@@ -427,7 +429,7 @@ input[type="email"] {
 input[type="submit"] {
     position: absolute;
     color: white;
-    background: #e2574c;
+    background: #db3a26;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -572,7 +574,7 @@ div.address-text {
 }
 input[type="submit"] {
     color: white;
-    background: #e2574c;
+    background: #db3a26;
     -webkit-transform: translate(70%, -50%);
         -ms-transform: translate(70%, -50%);
             transform: translate(70%, -50%);

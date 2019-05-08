@@ -28,7 +28,7 @@
 
             <nav class="site-nav">
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Featured</a></li>
                     <li><a href="#">Updates</a></li>
@@ -96,28 +96,28 @@
 
     <section class="main-carousel">
         <div class="carousel-cell">
-            <img src="images/cotton-blue-shirt.jpg" />
+            <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
             <p>Shirts</p>
             <h3><a class=most href="#">Cotton Blue Shirts</a></h3>
             <p>$89</p>
         </div>
 
         <div class="carousel-cell">
-            <img src="images/checked-stretch-dress.jpg" />
+            <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
             <p>Dresses</p>
             <h3><a class=most href="#">Checked Stretch Dress</a></h3>
             <p>$129</p>
         </div>
 
         <div class="carousel-cell">
-            <img src="images/blue-hipster-backpack.jpg" />
+            <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
             <p>Bags</p>
             <h3><a class=most href="#">Blue Hipster Backpack</a></h3>
             <p>$69</p>
         </div>
 
         <div class="carousel-cell">
-            <img src="images/demin-overall-shorts.jpg" />
+            <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
             <p>Denim</p>
             <h3><a class=most href="#">Denim Overall Shorts</a></h3>
             <p>$89</p>
@@ -131,7 +131,8 @@
 
 
         <form id="subscribe-form" class="site-form">
-            <input type="email" placeholder="&nbsp;&nbsp;Your Email" />
+            <label for="email">&nbsp;Your Email</label>
+            <input id="email" type="email" placeholder="&nbsp;&nbsp;Your Email" />
             <input type="submit" value="Subscribe" />
         </form>
     </section>
@@ -193,6 +194,7 @@
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="main.js"></script>
+    <script src="tota11y.min.js"></script>
 
 </body>
 
