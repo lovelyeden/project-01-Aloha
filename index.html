@@ -36,12 +36,13 @@
             </nav>
 
             <div class="site-cart">
+                <div class="counter"><span>0</span></div>
                 <img src="images/cart-icon.svg" alt="cart" />
             </div>
         </div>
     </header>
 
-
+    <div class="content">
     <section class="site-banner">
         <div class="banner-text">
             <p>New Collection</p>
@@ -57,7 +58,8 @@
         <div class="aloha">
             <p>Aloha Apparrel Co. sells only the finest ready-to-travel clothing. Browse our current selection of
                 products or
-                sign-up for updates below.</p>
+                sign-up for updates below.
+            </p>
         </div>
     </section>
 
@@ -98,95 +100,102 @@
         <div class="carousel-cell">
             <img src="images/cotton-blue-shirt.jpg" />
             <p>Shirts</p>
-            <h3><a class=most href="#">Cotton Blue Shirts</a></h3>
+            <h3><a class="most" href="#">Cotton Blue Shirts</a></h3>
             <p>$89</p>
+            <button  class="button">Add to Cart</button>
         </div>
 
         <div class="carousel-cell">
             <img src="images/checked-stretch-dress.jpg" />
             <p>Dresses</p>
-            <h3><a class=most href="#">Checked Stretch Dress</a></h3>
+            <h3><a class="most" href="#">Checked Stretch Dress</a></h3>
             <p>$129</p>
+            <button class="button">Add to Cart</button>
         </div>
 
         <div class="carousel-cell">
             <img src="images/blue-hipster-backpack.jpg" />
             <p>Bags</p>
-            <h3><a class=most href="#">Blue Hipster Backpack</a></h3>
+            <h3><a class="most" href="#">Blue Hipster Backpack</a></h3>
             <p>$69</p>
+            <button class="button">Add to Cart</button>
         </div>
 
         <div class="carousel-cell">
             <img src="images/demin-overall-shorts.jpg" />
             <p>Denim</p>
-            <h3><a class=most href="#">Denim Overall Shorts</a></h3>
+            <h3><a class="most" href="#">Denim Overall Shorts</a></h3>
             <p>$89</p>
+            <button class="button">Add to Cart</button>
         </div>
     </section>
 
     <section class="sign-updates">
         <h2>Sign-up for <strong>Updates</strong></h2>
         <p> Stay updated on our latest product releases, be first to find out about upcoming sales,and get free style
-            tipos from our blog. Unsubscribe at anytime.</p>
+            tips from our blog. Unsubscribe at anytime.</p>
 
 
         <form id="subscribe-form" class="site-form">
-            <input type="email" placeholder="&nbsp;&nbsp;Your Email" />
-            <input type="submit" value="Subscribe" />
+            <div class="email-container">
+                <input type="email" id="email" placeholder="&nbsp;&nbsp;Please Enter Your Email" />
+                <input type="submit" id="submit" value="Subscribe" />
+            </div>
         </form>
     </section>
 
 
 
     <footer class="container-footer">
-
-        <div class="address-text">
-            <p>&copy; 2016 Aloha Apparrel Co.<br>
+        <div class="inside-wrapper">
+            <div class="address-text">
+              <p>&copy; 2016 Aloha Apparrel Co.<br>
                 Powered by HTML and CSS.</p>
-            <p>604.604.6040&nbsp;<a class="email" href="#">.info@alohaapparel.com</a></p>
+                <p>604.604.6040&nbsp;<a class="email" href="#">.info@alohaapparel.com</a></p>
 
-            <p class="west">1490 W Broadway<br>
+                <p class="west">1490 W Broadway<br>
                 Vancouver, BC, Canada</p>
-        </div>
+            </div>
 
 
-        <div class="site-social">
-            <ul class="social-ul">
-                <li>
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                </li>
+            <div class="site-social">
+                <ul class="social-ul">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                     </li>
 
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter-square"></i>
-                        <span>Twitter</span>
-                    </a>
-                </li>
+                     <li>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <i class="fab fa-pinterest"></i>
-                        <span>Pinterest</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                            <span>Pinterest</span>
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#">
-                        <i class="fab fa-google-plus-g"></i>
-                        <span>Google</span>
-                    </a>
-                </li>
-            </ul>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                            <span>Google</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </footer>
@@ -196,4 +205,4 @@
 
 </body>
 
-</html>
+</html> 
